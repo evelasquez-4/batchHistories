@@ -50,7 +50,6 @@ public class PictureReader {
 				}
 				//String result = tes.doOCR(img);
 				//System.out.println(result);
-				
 			
 		} catch (Exception e) {
 			e.printStackTrace();
