@@ -42,7 +42,6 @@ public class Image implements Serializable {
 
     @Column(name="order_id", nullable=false)
     private Long    orderId ;
-    
 
 
     //--- ENTITY LINKS ( RELATIONSHIP )
@@ -51,13 +50,6 @@ public class Image implements Serializable {
     @JoinColumn(name="order_id", referencedColumnName="id", insertable=false, updatable=false)
     private Order      order ; 
 
-    //--- ENTITY LINKS ( RELATIONSHIP )
-    @ManyToOne
-    @JsonBackReference
-    @JoinColumn(name="batch_id", referencedColumnName="id", insertable=false, updatable=false)
-    private Batch      batch ; 
-
-    
     public Image() {}
     
     public Image(Long id, String type, String path, Long orderId, Order order) {
@@ -122,14 +114,6 @@ public class Image implements Serializable {
 
 	public void setOrder(Order order) {
 		this.order = order;
-	}
-
-	public Batch getBatch() {
-		return batch;
-	}
-
-	public void setBatch(Batch batch) {
-		this.batch = batch;
 	} 
 
 }

@@ -1,0 +1,128 @@
+Update date : Sun Jul 21 18:07:30 EDT 2024
+ 
+ Table 'address' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'text' : Comment changed to null
+ . Column 'text' updated
+ . Column 'county' : Comment changed to null
+ . Column 'county' updated
+ . Column 'state' : Comment changed to null
+ . Column 'state' updated
+ . Column 'zip_code' : Comment changed to null
+ . Column 'zip_code' updated
+ . Column 'is_verify' : Comment changed to null
+ . Column 'is_verify' updated
+ . Column 'is_house' : Comment changed to null
+ . Column 'is_house' updated
+ (*) table 'address' updated : 7 change(s)
+ 
+ Table 'batch' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'cant_orders' : Comment changed to null
+ . Column 'cant_orders' updated
+ . Column 'date' : Comment changed to null
+ . Column 'date' updated
+ . Column 'multi_store' : Comment changed to null
+ . Column 'multi_store' updated
+ . Column 'shopper_id' : Comment changed to null
+ . Column 'shopper_id' updated
+ . Column 'stores' : Comment changed to null
+ . Column 'stores' updated
+ (*) table 'batch' updated : 6 change(s)
+ 
+ Table 'customer' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'name' : Comment changed to null
+ . Column 'name' updated
+ . Column 'is_good_tipper' : Comment changed to null
+ . Column 'is_good_tipper' updated
+ . Column 'is_suspicious' : Comment changed to null
+ . Column 'is_suspicious' updated
+ . Column 'register_date' : Comment changed to null
+ . Column 'register_date' updated
+ (*) table 'customer' updated : 5 change(s)
+ 
+ Table 'image' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'type' : Comment changed to null
+ . Column 'type' updated
+ . Column 'path' : Comment changed to null
+ . Column 'path' updated
+ . Column 'batch_id' : Comment changed to null
+ . Column 'batch_id' updated
+ (*) table 'image' updated : 4 change(s)
+ 
+ Table 'order' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'total_items' : Comment changed to null
+ . Column 'total_items' updated
+ . Column 'date' : Comment changed to null
+ . Column 'date' updated
+ . Column 'is_gift' : Comment changed to null
+ . Column 'is_gift' updated
+ . Column 'note' : Comment changed to null
+ . Column 'note' updated
+ . Column 'tip' : Comment changed to null
+ . Column 'tip' updated
+ . Column 'customer_id' : Comment changed to null
+ . Column 'customer_id' updated
+ . Column 'store_id' : Comment changed to null
+ . Column 'store_id' updated
+ . Column 'batch_id' : Comment changed to null
+ . Column 'batch_id' updated
+ . Column 'shopper_notes' : Comment changed to null
+ . Column 'shopper_notes' updated
+ . Column 'due_date' : Comment changed to null
+ . Column 'due_date' updated
+ . Column 'number_order' : Comment changed to null
+ . Column 'number_order' updated
+ . Column 'address_id' : Comment changed to null
+ . Column 'address_id' updated
+ (*) table 'order' updated : 13 change(s)
+ 
+ Table 'prueba' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'cadena' : Comment changed to null
+ . Column 'cadena' updated
+ . Column 'numero' : Comment changed to null
+ . Column 'numero' updated
+ (*) table 'prueba' updated : 3 change(s)
+ 
+ Table 'prueba2' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'cadena' : Comment changed to null
+ . Column 'cadena' updated
+ . Column 'p_id' : Comment changed to null
+ . Column 'p_id' updated
+ (*) table 'prueba2' updated : 3 change(s)
+ 
+ Table 'shopper' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'code' : Comment changed to null
+ . Column 'code' updated
+ . Column 'name' : Comment changed to null
+ . Column 'name' updated
+ . Column 'phone_number' : Comment changed to null
+ . Column 'phone_number' updated
+ . Column 'sex' : Comment changed to null
+ . Column 'sex' updated
+ (*) table 'shopper' updated : 5 change(s)
+ 
+ Table 'store' found in repository
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ . Column 'name' : Comment changed to null
+ . Column 'name' updated
+ . Column 'code' : Comment changed to null
+ . Column 'code' updated
+ . Column 'address_id' : Comment changed to null
+ . Column 'address_id' updated
+ (*) table 'store' updated : 4 change(s)

@@ -46,9 +46,6 @@ public class Batch implements Serializable {
 
     @Column(name="multi_store")
     private Boolean    multiStore ;
-    
-    @Column(name="stores", length=250)
-    private String     stores ;
 
     //--- ENTITY LINKS ( RELATIONSHIP )
     @ManyToOne
@@ -61,29 +58,20 @@ public class Batch implements Serializable {
     @OneToMany(mappedBy="batch")
     @JsonManagedReference
     private List<Order> listOfOrder ; 
-    
-    @OneToMany(mappedBy="batch")
-    @JsonManagedReference
-    private List<Image> listOfImage ; 
 
     public Batch() {}
 
     
-    
-    
-    public Batch(Long id, Integer cantOrders, Date date, Boolean multiStore, String stores, Shopper shopper,
-			List<Order> listOfOrder, List<Image> listOfImage) {
-		super();
+    public Batch(Long id, Integer cantOrders, Date date, Boolean multiStore, Shopper shopper,
+			List<Order> listOfOrder) {
+		
 		this.id = id;
 		this.cantOrders = cantOrders;
 		this.date = date;
 		this.multiStore = multiStore;
-		this.stores = stores;
 		this.shopper = shopper;
 		this.listOfOrder = listOfOrder;
-		this.listOfImage = listOfImage;
 	}
-
 
 	//--- toString specific method
 	@Override
@@ -158,31 +146,8 @@ public class Batch implements Serializable {
 
 	public void setListOfOrder(List<Order> listOfOrder) {
 		this.listOfOrder = listOfOrder;
-	}
-
-
-	public String getStores() {
-		return stores;
-	}
-
-
-	public void setStores(String stores) {
-		this.stores = stores;
-	}
-
-
-
-
-	public List<Image> getListOfImage() {
-		return listOfImage;
-	}
-
-
-
-
-	public void setListOfImage(List<Image> listOfImage) {
-		this.listOfImage = listOfImage;
 	} 
 
+	
 }
 
